@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css?family=B612:400,700&display=swap');
+
+:root{
+  --primary: #ddd;
+  --dark: #333;
+  --light: #FEE1E1;
+  --shadow: .1rem .1rem .2rem black;
+  --shadowred: 	(246,25,0)
+  --shadowLight: .1rem .1rem .2rem white;
+
+}
+
+
+
+
+body{
+  font-family: 'B612', sans-serif;
+  margin: 0!important;
+  padding: 0!important;
+}
+
+footer{
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-transform: uppercase;
+}
+
+
+
+/* Navigation */
+
+
+.navbar-brand{
+  font-weight: 700;
+  letter-spacing: .5rem;
+  padding-left: 5rem;
+}
+
+.black-off{
+  background: rgba(0, 0, 0, 0.6)!important;
+}
+
+.black-on{
+  background: rgba(0, 0, 0, 1)!important;
+}
+
+#navbarResponsive ul li a{
+  color: var(--light);
+}
+
+#navbarResponsive ul{
+  padding-right: 3rem;
+}
+
+.dropdown-menu{
+  background: rgba(0, 0, 0, 0.6)!important;
+}
+
+.dropdown-item:hover{
+  background: rgba(0, 0, 0, 0.1)!important;
+  color: var(--light)!important;
+}
+
+
+
+
+/* Landing Page */
+
+.container h1{
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.container p{
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+
+.wrapper{
+  height: 100vh;
+  width: 100%;
+  background: url('../img/keyboard-black.jpg');
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  position: relative;
+
+}
+
+.container{
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  color: var(--light);
+  text-shadow: var(--shadow);
+}
+
+.container a{
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+
+.fa-hand-point-down{
+  color: var(--light);
+}
+
+.fa-hand-point-down:hover{
+  color: rgba(255,255,255,0.6)
+}
+
+
+
+
+/* About */
+
+.wrapAbout{
+  width: 80%;
+  margin: 0 auto;
+  padding:1rem;
+  position: relative;
+  background: #f2f2f2;
+}
+
+
+
+.wrapAbout h3{
+  font-weight: 700;
+  text-shadow: var(--shadowLight);
+}
+
+#about > div > div:nth-child(2) > div > img{
+    width: 100%!important;
+}
+
+
+
+#about > div > div:nth-child(1){
+  padding-top: 3rem;
+  vertical-align: center;
+  text-align: justify;
+}
+
+/* Service */
+
+.wrapServices{
+  position: relative;
+  color: var(--dark);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapServices h3{
+  text-shadow: var(--shadow);
+}
+
+.wrapServices img{
+}
+
+.fixed-background{
+
+  position: relative;
+  width: 100%;
+  height: 420px;
+  z-index: -1;
+  color: var(--light);
+
+}
+
+.fixed-wrap{
+  position: absolute;
+  clip: rect(0, auto, auto, 0);
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+
+}
+
+.fixed{
+    background: url('../img/web-development.jpg');
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    background-position: center center;
+    z-index: -1;
+}
+
+.dark{
+   background: rgba(0, 0, 0, 0.6);
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  top:0;
+  left: 0:
+  z-index: 2;
+}
+
+.services{
+  width: 80%;
+  margin: 0 auto!important;
+  position: relative;
+  text-align: center;
+  padding-top: 2rem;
+
+}
+
+
+.services img{
+  width: 50%;
+  height: 100;
+  padding-bottom: 1rem;
+}
+
+.services div h3{
+  font-weight: 700;
+}
+
+/* Contacts */
+
+.footerWrapper{
+  padding: 2rem 0rem;
+  position:relative;
+  background: #f2f2f2;
+  width: 100%;
+
+
+}
+
+.footerWrapper .row{
+  width: 100%;
+}
+
+.footerWrapper h1{
+  padding-bottom: 2rem;
+  font-weight: 700;
+}
+
+
+
+.socials li{
+  display: inline;
+  padding-left: 1rem;
+}
+
+.message{
+  padding-top: 1rem;
+}
+
+.columnRule{
+  border-right: 4px solid var(--light)!important;
+}
+
+.address{
+  list-style: none;
+}
+
+.trademark{
+  position: relative;
+  background: #333333;
+  color: var(--light);
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.trademark h5{
+  position: relative
+  padding-top: 1rem;
+  margin: 0;
+}
+
+.messages{
+  width:70%;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+.form-control{
+  width: 100%;
+}
+
+.inputs div{
+  padding-bottom: .5rem;
+}
+
+textarea{
+  margin-bottom: 1rem;
+}
+
+.messages .row{
+  padding-top: 1rem;
+}
+
+
+
+.form-control:focus{
+    border-color: black;
+    box-shadow:  var(--shadow);
+}
+
+.block{
+  padding-top: 4rem
+}
